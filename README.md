@@ -19,7 +19,7 @@ docker volume create postgres_volume
 *POSTGRES_USER
 *POSTGRES_PASSWORD
 
-**4) Devemos realizar um port binding para porta 1521 para rodar a nossa instância postgres em um container**
+**4) Devemos realizar um port binding para porta 5432 para rodar a nossa instância postgres em um container**
 
 **5) Para subir a imagem para o seu repositório no Docker Hub. Vamos utilizar o seguinte comando:**
 
@@ -36,7 +36,7 @@ docker push <nome-repositorio>/postgres11:latest
 **6) Para criarmos containers a partir da nossa imagem versionada. Utilizaremos o seguinte comando:**
 
 ```docker
-docker container run -d -p 1521:1521 --name postgres11-container <nome-repositorio>/postgres11:<versao>
+docker container run -d -p 5432:5432 --name postgres11-container <nome-repositorio>/postgres11:<versao>
 ```
 Para maiores informações de como criar imagens postgres e executar containers a partir delas. Segue abaixo o link da documentação oficial.
 
