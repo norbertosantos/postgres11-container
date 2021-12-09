@@ -16,8 +16,9 @@ docker volume create postgres_volume
 ```
 **3) A documentação oficial da imagem do Postgres nos indica a necessidade de informar duas variáveis de ambiente. São elas:**
 
-*POSTGRES_USER
-*POSTGRES_PASSWORD
+-POSTGRES_USER
+
+-POSTGRES_PASSWORD
 
 **4) Devemos realizar um port binding para porta 5432 para rodar a nossa instância postgres em um container**
 
